@@ -48,7 +48,7 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 * Service Locator
 * Transfer Object
 
-## Some resource
+# Some resource
 * [Java Beginner](http://docs.oracle.com/javase/tutorial/)
 * [Design Patterns Wiki](http://en.wikipedia.org/wiki/Software_design_pattern)
 * [Java Design Patterns Wiki](http://en.wikibooks.org/wiki/Java_Programming/Design_Patterns)
