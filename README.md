@@ -14,12 +14,10 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 * [Factory](./docs/factory.md)
 * [Abstract Factory](./docs/abstract_factory.md)
 * [Singleton](./docs/singleton.md)
-
-## Structural Patterns
-
-## Behavioral Patterns
 * [Builder](./docs/builder.md)
 * [Prototype](./docs/prototype.md)
+
+## Structural Patterns
 * [Adapter](./docs/adapter.md)
 * [Bridge](./docs/bridge.md)
 * [Filter](./docs/filter.md)
@@ -28,6 +26,8 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 * [Facade](./docs/facade.md)
 * [Flyweight](./docs/flyweight.md)
 * [Proxy](./docs/proxy.md)
+
+## Behavioral Patterns
 * [Chain of Responsiblity](./docs/chain_of_esponsiblity.md)
 * [Command](./docs/command.md)
 * [Interperter](./docs/interperter.md)
@@ -37,8 +37,11 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 * [Observer](./docs/observer.md)
 * [State](./docs/state.md)
 * [Null Object](./docs/null_object.md)
+* [Strategy](./docs/strategy.md)
 * [Template](./docs/template.md)
 * [Visitor](./docs/visitor.md)
+
+## Others
 * [MVC](./docs/mvc.md)
 * [Business Delegate](./docs/business_delegate.md)
 * [Composite Entity](./docs/composite_entity.md)
