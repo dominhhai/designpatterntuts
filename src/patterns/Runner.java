@@ -8,6 +8,8 @@ import patterns.abstract_factory.LanguageFactory;
 import patterns.abstract_factory.OsFactory;
 import patterns.abstract_factory.language.Language;
 import patterns.abstract_factory.os.Os;
+import patterns.builder.Computer;
+import patterns.builder.ComputerBuilder;
 import patterns.factory.Country;
 import patterns.factory.CountryFactory;
 import patterns.factory.Japan;
@@ -67,5 +69,14 @@ public class Runner {
 			Me me = Me.getInstance();
 			me.call();
 		}
+		
+		//
+		// Builder
+		//
+		Computer computer = ComputerBuilder.createComputer(ComputerBuilder.LINUX, ComputerBuilder.HANOI);
+		computer.print();
+		
+		computer = ComputerBuilder.createComputer(ComputerBuilder.WINDOWS, ComputerBuilder.TOKYO);
+		computer.print();
 	}
 }
