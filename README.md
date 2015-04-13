@@ -11,7 +11,7 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 
 # List of patterns
 ## Creational Patterns
-* Factory
+* [Factory](./docs/factory.md)
 * Abstract Factory
 * Singleton
 
