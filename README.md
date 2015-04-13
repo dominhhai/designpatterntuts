@@ -18,35 +18,35 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 ## Structural Patterns
 
 ## Behavioral Patterns
-* Builder
-* Prototype
-* Adapter
-* Bridge
-* Filter
-* Composite
-* Decorator
-* Facade
-* Flyweight
-* Proxy
-* Chain of Responsiblity
-* Command
-* Interperter
-* Interator
-* Mediator
-* Memento
-* Observer
-* State
-* Null Object
-* Template
-* Visitor
-* MVC
-* Business Delegate
-* Composite Entity
-* Data Access Object
-* Front Controller
-* Intercepting Filter
-* Service Locator
-* Transfer Object
+* [Builder](./docs/builder.md)
+* [Prototype](./docs/prototype.md)
+* [Adapter](./docs/adapter.md)
+* [Bridge](./docs/bridge.md)
+* [Filter](./docs/filter.md)
+* [Composite](./docs/composite.md)
+* [Decorator](./docs/decorator.md)
+* [Facade](./docs/facade.md)
+* [Flyweight](./docs/flyweight.md)
+* [Proxy](./docs/proxy.md)
+* [Chain of Responsiblity](./docs/chain_of_esponsiblity.md)
+* [Command](./docs/command.md)
+* [Interperter](./docs/interperter.md)
+* [Interator](./docs/interator.md)
+* [Mediator](./docs/mediator.md)
+* [Memento](./docs/memento.md)
+* [Observer](./docs/observer.md)
+* [State](./docs/state.md)
+* [Null Object](./docs/null_object.md)
+* [Template](./docs/template.md)
+* [Visitor](./docs/visitor.md)
+* [MVC](./docs/mvc.md)
+* [Business Delegate](./docs/business_delegate.md)
+* [Composite Entity](./docs/composite_entity.md)
+* [Data Access Object](./docs/data_access_object.md)
+* [Front Controller](./docs/front_controller.md)
+* [Intercepting Filter](./docs/intercepting_filter.md)
+* [Service Locator](./docs/service_locator.md)
+* [Transfer Object](./docs/transfer_object.md)
 
 # Some resource
 * [Java Beginner](http://docs.oracle.com/javase/tutorial/)
