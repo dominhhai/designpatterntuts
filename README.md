@@ -1,5 +1,6 @@
-# designpatterntuts
-Design Patterns by Java Tutorials
+# Design Patterns Tuts
+
+Learn the Design Patterns by Java Tutorials
 
 ## List of patterns
 * Factory
