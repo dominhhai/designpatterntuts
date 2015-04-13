@@ -12,12 +12,12 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 # List of patterns
 ## Creational Patterns
 * Factory
+* Abstract Factory
+* Singleton
 
 ## Structural Patterns
 
 ## Behavioral Patterns
-
-* Singleton
 * Builder
 * Prototype
 * Adapter
