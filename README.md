@@ -13,8 +13,11 @@ These design patterns are specifically concerned with communication between obje
 # List of patterns
 ## Creational Patterns
 * Factory
+
 ## Structural Patterns
+
 ## Behavioral Patterns
+
 * Singleton
 * Builder
 * Prototype
