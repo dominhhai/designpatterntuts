@@ -41,7 +41,7 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 * [Template](./docs/template.md)
 * [Visitor](./docs/visitor.md)
 
-## Others
+## Architectural Patterns
 * [MVC](./docs/mvc.md)
 * [Business Delegate](./docs/business_delegate.md)
 * [Composite Entity](./docs/composite_entity.md)
