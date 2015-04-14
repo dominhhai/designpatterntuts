@@ -14,6 +14,7 @@ import patterns.factory.Country;
 import patterns.factory.CountryFactory;
 import patterns.factory.Japan;
 import patterns.factory.Vietnam;
+import patterns.prototype.Awesome;
 import patterns.singleton.Me;
 
 /**
@@ -78,5 +79,15 @@ public class Runner {
 		
 		computer = ComputerBuilder.createComputer(ComputerBuilder.WINDOWS, ComputerBuilder.TOKYO);
 		computer.print();
+		
+		//
+		// Prototype
+		//
+		
+		Awesome awesome = new Awesome("Java Cloner");
+		awesome.print();
+		
+		Awesome clone = (Awesome) awesome.clone();
+		clone.print();
 	}
 }
