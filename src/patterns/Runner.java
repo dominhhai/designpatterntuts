@@ -8,6 +8,7 @@ import patterns.abstract_factory.LanguageFactory;
 import patterns.abstract_factory.OsFactory;
 import patterns.abstract_factory.language.Language;
 import patterns.abstract_factory.os.Os;
+import patterns.adapter.MobileKeycodeAdapter;
 import patterns.builder.Computer;
 import patterns.builder.ComputerBuilder;
 import patterns.factory.Country;
@@ -18,7 +19,7 @@ import patterns.prototype.Awesome;
 import patterns.singleton.Me;
 
 /**
- * @author hai-4181
+ * @author Hai Do Minh
  *
  */
 public class Runner {
@@ -82,12 +83,17 @@ public class Runner {
 		
 		//
 		// Prototype
-		//
-		
+		//		
 		Awesome awesome = new Awesome("Java Cloner");
 		awesome.print();
 		
 		Awesome clone = (Awesome) awesome.clone();
 		clone.print();
+		
+		//
+		// Adapter
+		//
+		System.out.println("For Nokia: " + MobileKeycodeAdapter.getKeyCode("LEFT", MobileKeycodeAdapter.NOKIA));
+		System.out.println("For Motorola: " + MobileKeycodeAdapter.getKeyCode("LEFT", MobileKeycodeAdapter.MOTOROLA));
 	}
 }
