@@ -21,6 +21,7 @@ import patterns.composite.EmployeeTester;
 import patterns.decorator.Boy;
 import patterns.decorator.ChildrenDecorator;
 import patterns.decorator.Girl;
+import patterns.facade.SystemFacade;
 import patterns.factory.Country;
 import patterns.factory.CountryFactory;
 import patterns.factory.Japan;
@@ -167,5 +168,11 @@ public class Runner {
 		};
 		
 		moreGirl.doTask();
+		
+		//
+		// Facade
+		//
+		SystemFacade.getInstance().invokeCalculateSystem();
+		SystemFacade.getInstance().invokeControlSystem();
 	}
 }
