@@ -9,6 +9,9 @@ import patterns.abstract_factory.OsFactory;
 import patterns.abstract_factory.language.Language;
 import patterns.abstract_factory.os.Os;
 import patterns.adapter.MobileKeycodeAdapter;
+import patterns.bridge.File;
+import patterns.bridge.FileReader;
+import patterns.bridge.FileWritter;
 import patterns.builder.Computer;
 import patterns.builder.ComputerBuilder;
 import patterns.factory.Country;
@@ -30,7 +33,7 @@ public class Runner {
 		//		
 		// Vietnam
 		Country vietnam = CountryFactory.getCountry(CountryFactory.VIETNAM);
-		System.out.println("vietname IS"+ (vietnam instanceof Vietnam ? " " : " NOT ") +"instance of Vietnam Class");
+		System.out.println("vietnam IS"+ (vietnam instanceof Vietnam ? " " : " NOT ") +"instance of Vietnam Class");
 		vietnam.food();
 		// Japan
 		Country japan = CountryFactory.getCountry(CountryFactory.JAPAN);
@@ -95,5 +98,13 @@ public class Runner {
 		//
 		System.out.println("For Nokia: " + MobileKeycodeAdapter.getKeyCode("LEFT", MobileKeycodeAdapter.NOKIA));
 		System.out.println("For Motorola: " + MobileKeycodeAdapter.getKeyCode("LEFT", MobileKeycodeAdapter.MOTOROLA));
+		
+		//
+		// Bridge
+		//
+		File reader = new File("autorun.io", new FileReader());
+		reader.fileMainpulate();
+		File writter = new File("system.io", new FileWritter());
+		writter.fileMainpulate();
 	}
 }
