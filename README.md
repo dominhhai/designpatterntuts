@@ -10,6 +10,8 @@ Structural Patterns | These design patterns concern class and object composition
 Behavioral Patterns | These design patterns are specifically concerned with communication between objects. |
 
 # List of patterns
+[Compare](./docs/compare_patterns.md)
+
 ## Creational Patterns
 * [Factory](./docs/factory.md)
 * [Abstract Factory](./docs/abstract_factory.md)
@@ -55,3 +57,5 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 * [Java Beginner](http://docs.oracle.com/javase/tutorial/)
 * [Design Patterns Wiki](http://en.wikipedia.org/wiki/Software_design_pattern)
 * [Java Design Patterns Wiki](http://en.wikibooks.org/wiki/Java_Programming/Design_Patterns)
+* [Introduction To Design Patterns](http://userpages.umbc.edu/~tarr/dp/spr06/cs446.html)
+* [Object-Oriented Modeling](http://www.cs.sjsu.edu/~pearce/oom/)
