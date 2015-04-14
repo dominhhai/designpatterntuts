@@ -18,6 +18,9 @@ import patterns.bridge.FileWritter;
 import patterns.builder.Computer;
 import patterns.builder.ComputerBuilder;
 import patterns.composite.EmployeeTester;
+import patterns.decorator.Boy;
+import patterns.decorator.ChildrenDecorator;
+import patterns.decorator.Girl;
 import patterns.factory.Country;
 import patterns.factory.CountryFactory;
 import patterns.factory.Japan;
@@ -137,5 +140,32 @@ public class Runner {
 		// Composite
 		//
 		EmployeeTester.runner();
+		
+		//
+		// Decorator
+		//
+		Boy boy = new Boy();
+		boy.doTask();
+		Girl girl = new Girl();
+		girl.doTask();
+		ChildrenDecorator moreBoy = new ChildrenDecorator(boy) {
+			@Override
+			public void doTask() {
+				super.doTask();
+				System.out.println("Boy does clearing house also");
+			}
+		};
+		
+		moreBoy.doTask();
+		
+		ChildrenDecorator moreGirl = new ChildrenDecorator(girl) {
+			@Override
+			public void doTask() {
+				System.out.println("Girl does clearing house also");
+				super.doTask();				
+			}
+		};
+		
+		moreGirl.doTask();
 	}
 }
