@@ -28,6 +28,8 @@ import patterns.factory.Japan;
 import patterns.factory.Vietnam;
 import patterns.filter.Filter;
 import patterns.filter.Region;
+import patterns.flyweight.Person;
+import patterns.flyweight.PersonFactory;
 import patterns.prototype.Awesome;
 import patterns.singleton.Me;
 
@@ -174,5 +176,18 @@ public class Runner {
 		//
 		SystemFacade.getInstance().invokeCalculateSystem();
 		SystemFacade.getInstance().invokeControlSystem();
+		
+		//
+		// Flyweight
+		//
+		String[] ids = {"x001", "x002", "x003"};
+		for (int i = 0; i < 10; i ++) {
+			String id = ids[(int)(Math.random() * ids.length)];
+			Person person = PersonFactory.getPerson(id);
+			person.print();
+		}
+		//
+		// Proxy
+		//
 	}
 }
