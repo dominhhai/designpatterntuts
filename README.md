@@ -20,7 +20,7 @@ Behavioral Patterns | These design patterns are specifically concerned with comm
 ## Structural Patterns
 * [Adapter](./docs/adapter.md)
 * [Bridge](./docs/bridge.md)
-* [Filter](./docs/filter.md)
+* [Filter (Criteria)](./docs/filter.md)
 * [Composite](./docs/composite.md)
 * [Decorator](./docs/decorator.md)
 * [Facade](./docs/facade.md)

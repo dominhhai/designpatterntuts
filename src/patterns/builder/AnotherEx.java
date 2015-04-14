@@ -15,14 +15,14 @@ public class AnotherEx {
 		
 	}
 	
-//	@Deprecated
+	@Deprecated
 	public AnotherEx(String name, byte age, String motto) {
 		this.name = name;
 		this.age = age;
 		this.motto = motto;
 	}
 	
-//	@Deprecated
+	@Deprecated
 	public AnotherEx build() {
 		return new AnotherEx(name, age, motto);
 	}

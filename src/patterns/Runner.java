@@ -3,6 +3,9 @@
  */
 package patterns;
 
+import java.util.ArrayList;
+import java.util.function.Consumer;
+
 import patterns.abstract_factory.AbstractFactory;
 import patterns.abstract_factory.LanguageFactory;
 import patterns.abstract_factory.OsFactory;
@@ -18,6 +21,8 @@ import patterns.factory.Country;
 import patterns.factory.CountryFactory;
 import patterns.factory.Japan;
 import patterns.factory.Vietnam;
+import patterns.filter.Filter;
+import patterns.filter.Region;
 import patterns.prototype.Awesome;
 import patterns.singleton.Me;
 
@@ -106,5 +111,25 @@ public class Runner {
 		reader.fileMainpulate();
 		File writter = new File("system.io", new FileWritter());
 		writter.fileMainpulate();
+		
+		//
+		// Filter
+		//
+		Region region = new Region();
+		ArrayList<String> filtered = region.filter(new Filter() {
+			
+			@Override
+			public boolean filter(String name) {
+				return name.length() > 4;
+			}
+		});
+		
+		filtered.forEach(new Consumer<String>() {
+
+			@Override
+			public void accept(String arg0) {
+				System.out.println(arg0);
+			}
+		});
 	}
 }
