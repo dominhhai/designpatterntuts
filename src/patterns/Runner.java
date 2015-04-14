@@ -17,6 +17,7 @@ import patterns.bridge.FileReader;
 import patterns.bridge.FileWritter;
 import patterns.builder.Computer;
 import patterns.builder.ComputerBuilder;
+import patterns.composite.EmployeeTester;
 import patterns.factory.Country;
 import patterns.factory.CountryFactory;
 import patterns.factory.Japan;
@@ -131,5 +132,10 @@ public class Runner {
 				System.out.println(arg0);
 			}
 		});
+		
+		//
+		// Composite
+		//
+		EmployeeTester.runner();
 	}
 }
