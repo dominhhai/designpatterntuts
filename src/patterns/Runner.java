@@ -31,6 +31,8 @@ import patterns.filter.Region;
 import patterns.flyweight.Person;
 import patterns.flyweight.PersonFactory;
 import patterns.prototype.Awesome;
+import patterns.proxy.Image;
+import patterns.proxy.ImageProxy;
 import patterns.singleton.Me;
 
 /**
@@ -189,5 +191,9 @@ public class Runner {
 		//
 		// Proxy
 		//
+		Image image = new ImageProxy("the_image.png");
+		image.display();
+		System.out.println("re-print");
+		image.display();
 	}
 }
