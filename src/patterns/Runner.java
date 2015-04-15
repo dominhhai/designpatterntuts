@@ -17,6 +17,8 @@ import patterns.bridge.FileReader;
 import patterns.bridge.FileWritter;
 import patterns.builder.Computer;
 import patterns.builder.ComputerBuilder;
+import patterns.chain_of_esponsiblity.Logger;
+import patterns.chain_of_esponsiblity.LoggerFactory;
 import patterns.composite.EmployeeTester;
 import patterns.decorator.Boy;
 import patterns.decorator.ChildrenDecorator;
@@ -195,5 +197,13 @@ public class Runner {
 		image.display();
 		System.out.println("re-print");
 		image.display();
+		
+		//
+		// Chain of Responsibility
+		//
+		Logger logger = LoggerFactory.getLogger();
+		logger.log(Logger.DEBUG, "Debug");
+		logger.log(Logger.INFO, "Info");
+		logger.log(Logger.ERROR, "Error");
 	}
 }
