@@ -36,6 +36,8 @@ import patterns.filter.Filter;
 import patterns.filter.Region;
 import patterns.flyweight.Person;
 import patterns.flyweight.PersonFactory;
+import patterns.interpreter.Expression;
+import patterns.interpreter.InterpreterDemo;
 import patterns.prototype.Awesome;
 import patterns.proxy.Image;
 import patterns.proxy.ImageProxy;
@@ -223,5 +225,14 @@ public class Runner {
 		broker.takeOrder(sellStockOrder);
 		
 		broker.placeOrders();// run command
+		
+		//
+		// Interpreter
+		//
+		Expression isMale = InterpreterDemo.getMaleExpression();
+		Expression isMarriedWoman = InterpreterDemo.getMarriedWomanExpression();
+		
+		System.out.println("John is male?" + isMale.interpret("John"));
+		System.out.println("Julie is a married woman?" + isMarriedWoman.interpret("Married Julie"));
 	}
 }
