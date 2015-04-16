@@ -19,6 +19,10 @@ import patterns.builder.Computer;
 import patterns.builder.ComputerBuilder;
 import patterns.chain_of_esponsiblity.Logger;
 import patterns.chain_of_esponsiblity.LoggerFactory;
+import patterns.command.Broker;
+import patterns.command.BuyStock;
+import patterns.command.SellStock;
+import patterns.command.Stock;
 import patterns.composite.EmployeeTester;
 import patterns.decorator.Boy;
 import patterns.decorator.ChildrenDecorator;
@@ -205,5 +209,19 @@ public class Runner {
 		logger.log(Logger.DEBUG, "Debug");
 		logger.log(Logger.INFO, "Info");
 		logger.log(Logger.ERROR, "Error");
+		
+		//
+		// Command
+		//
+		Stock abcStock = new Stock(); // command objective
+		
+		BuyStock buyStockOrder = new BuyStock(abcStock); // command
+		SellStock sellStockOrder = new SellStock(abcStock); // command
+		
+		Broker broker = new Broker();
+		broker.takeOrder(buyStockOrder);
+		broker.takeOrder(sellStockOrder);
+		
+		broker.placeOrders();// run command
 	}
 }
