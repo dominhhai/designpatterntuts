@@ -38,6 +38,8 @@ import patterns.flyweight.Person;
 import patterns.flyweight.PersonFactory;
 import patterns.interpreter.Expression;
 import patterns.interpreter.InterpreterDemo;
+import patterns.iterator.Iterator;
+import patterns.iterator.NameRepository;
 import patterns.prototype.Awesome;
 import patterns.proxy.Image;
 import patterns.proxy.ImageProxy;
@@ -234,5 +236,15 @@ public class Runner {
 		
 		System.out.println("John is male?" + isMale.interpret("John"));
 		System.out.println("Julie is a married woman?" + isMarriedWoman.interpret("Married Julie"));
+		
+		//
+		// Iterator
+		//
+		NameRepository nameRepository = new NameRepository();
+		Iterator iter = nameRepository.getIterator();
+		
+		while (iter.hasNext()) {
+			System.out.println("Name: " + ((String) iter.next()));
+		}
 	}
 }
